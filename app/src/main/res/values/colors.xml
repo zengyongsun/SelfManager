@@ -4,7 +4,13 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
+    <color name="white">#FFFFFF</color>
 
     <color name="bg_color_EFEFF4">#EFEFF4</color>
+
+    <color name="text_color_3E3A39">#3E3A39</color>
+    <color name="hint_color_CBCCCC">#CBCCCC</color>
+
+    <color name="line_color_E6E6E6">#E6E6E6</color>
 
 </resources>

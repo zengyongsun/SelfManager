@@ -1,14 +1,276 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             android:background="@color/bg_color_EFEFF4"
-             tools:context="com.zy.selfmanagement.fragment.EventFragment">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_color_EFEFF4"
+            tools:context="com.zy.selfmanagement.fragment.EventFragment">
 
-    <TextView
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="EventFragment"/>
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/conOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_white_fillet_bg"
+            android:paddingBottom="15dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvThreeThings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="20dp"
+                android:paddingTop="15dp"
+                android:text="@string/write_three_things"
+                android:textColor="@color/text_color_3E3A39"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <View
+                android:id="@+id/lineOne"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_color_E6E6E6"
+                app:layout_constraintTop_toBottomOf="@+id/tvThreeThings"/>
+
+
+            <EditText
+                android:id="@+id/etOne"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="@string/hint_event_one"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:textSize="15sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/vLineOne"
+                app:layout_constraintTop_toBottomOf="@+id/lineOne"/>
+
+            <CheckBox
+                android:id="@+id/cbOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/single_choice_gou_selector"
+                android:paddingRight="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/lineTwo"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lineOne"/>
+
+            <View
+                android:id="@+id/vLineOne"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/line_color_E6E6E6"
+                app:layout_constraintBottom_toBottomOf="@+id/lineFour"
+                app:layout_constraintRight_toLeftOf="@+id/cbOne"
+                app:layout_constraintTop_toTopOf="@+id/lineOne"/>
+
+            <View
+                android:id="@+id/lineTwo"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_color_E6E6E6"
+                app:layout_constraintTop_toBottomOf="@+id/etOne"/>
+
+            <EditText
+                android:id="@+id/etTwo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/hint_event_two"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:textSize="15sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/vLineOne"
+                app:layout_constraintTop_toBottomOf="@+id/lineTwo"/>
+
+            <CheckBox
+                android:id="@+id/cbTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/single_choice_gou_selector"
+                android:paddingRight="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/lineThree"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lineTwo"/>
+
+            <View
+                android:id="@+id/lineThree"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_color_E6E6E6"
+                app:layout_constraintTop_toBottomOf="@+id/etTwo"/>
+
+            <EditText
+                android:id="@+id/etThree"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/hint_event_three"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:textSize="15sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/vLineOne"
+                app:layout_constraintTop_toBottomOf="@+id/lineThree"/>
+
+            <CheckBox
+                android:id="@+id/cbThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/single_choice_gou_selector"
+                android:paddingRight="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/lineThree"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lineFour"/>
+
+            <View
+                android:id="@+id/lineFour"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_color_E6E6E6"
+                app:layout_constraintTop_toBottomOf="@+id/etThree"/>
+
+            <TextView
+                android:id="@+id/tvQueXing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="@string/write_xiao_que_xing"
+                android:textColor="@color/text_color_3E3A39"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lineFour"/>
+
+            <View
+                android:id="@+id/lineFive"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_color_E6E6E6"
+                app:layout_constraintTop_toBottomOf="@+id/tvQueXing"/>
+
+            <EditText
+                android:id="@+id/etQueXing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/hint_event_three"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@+id/lineFive"/>
+
+            <CheckBox
+                android:id="@+id/cbQueXing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/single_choice_gou_selector"
+                android:paddingRight="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/lineFive"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lineSix"/>
+
+            <View
+                android:id="@+id/vLineTwo"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/line_color_E6E6E6"
+                app:layout_constraintBottom_toBottomOf="@+id/lineSix"
+                app:layout_constraintRight_toLeftOf="@+id/cbQueXing"
+                app:layout_constraintTop_toTopOf="@+id/lineFive"/>
+
+            <View
+                android:id="@+id/lineSix"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_color_E6E6E6"
+                app:layout_constraintTop_toBottomOf="@+id/etQueXing"/>
+
+
+            <TextView
+                android:id="@+id/tvSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape_blue_bt_bg"
+                android:paddingBottom="5dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="5dp"
+                android:text="@string/bt_save_text"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lineSix"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_white_fillet_bg"
+            android:paddingBottom="15dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/conOne">
+
+            <TextView
+                android:id="@+id/tvWriteSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="@string/write_summarty"
+                android:textColor="@color/text_color_3E3A39"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/tvSummary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape_blue_bt_bg"
+                android:paddingBottom="5dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="5dp"
+                android:text="@string/bt_summary"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@+id/tvWriteSummary"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>

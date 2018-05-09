@@ -6,4 +6,20 @@
     <string name="title_history">"历史"</string>
     <string name="title_mine">"我的"</string>
 
+
+    <string name="bt_save_text">保存修改</string>
+
+    <string name="bt_summary">今日总结</string>
+
+    <string name="write_three_things">写下今天最重要的三件事</string>
+    <string name="write_xiao_que_xing">写下你的小确幸</string>
+
+    <string name="write_summarty">在一天结束后，你可以</string>
+
+    <string name="hint_event_one">想想每件情是否与人生目标相关？</string>
+    <string name="hint_event_two">想想每件事的完成标准是什么？</string>
+    <string name="hint_event_three">想想每件事的描述是否清晰具体？</string>
+
+
+
 </resources>

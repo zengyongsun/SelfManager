@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">SelfManagement</string>
+
+
+    <string name="title_event">"三件事"</string>
+    <string name="title_history">"历史"</string>
+    <string name="title_mine">"我的"</string>
+
 </resources>

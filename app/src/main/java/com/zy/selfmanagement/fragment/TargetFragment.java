@@ -6,28 +6,17 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.CheckBox;
-import android.widget.EditText;
 
 import com.zy.selfmanagement.R;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
-import butterknife.BindView;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
-import butterknife.Unbinder;
-
-public class EventFragment extends Fragment {
+public class TargetFragment extends Fragment {
 
 
-    public EventFragment() {
+    public TargetFragment() {
     }
 
-    public static EventFragment newInstance() {
-        EventFragment fragment = new EventFragment();
+    public static TargetFragment newInstance() {
+        TargetFragment fragment = new TargetFragment();
         return fragment;
     }
 
@@ -39,7 +28,7 @@ public class EventFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_event, container, false);
+        View view = inflater.inflate(R.layout.fragment_target, container, false);
         return view;
     }
 

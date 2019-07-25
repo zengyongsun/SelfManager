@@ -10,10 +10,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
 
-import com.zy.selfmanagement.fragment.EventFragment;
+import com.zy.selfmanagement.fragment.TargetFragment;
 import com.zy.selfmanagement.fragment.HistoryFragment;
 import com.zy.selfmanagement.fragment.MineFragment;
-import com.zy.selfmanagement.utils.BottomNavigationViewHelper;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -24,7 +23,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     BottomNavigationView bottomNavigationView;
     @BindView(R.id.frameLayout)
     FrameLayout frameLayout;
-    private EventFragment eventFragment;
+    private TargetFragment targetFragment;
     private HistoryFragment historyFragment;
     private MineFragment mineFragment;
 
@@ -39,21 +38,20 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
     private void initUI() {
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
-        BottomNavigationViewHelper.disableShiftMode(bottomNavigationView);
     }
 
     private void initFragment() {
-        eventFragment = EventFragment.newInstance();
+        targetFragment = TargetFragment.newInstance();
         historyFragment = HistoryFragment.newInstance();
         mineFragment = MineFragment.newInstance();
-        setFragment(eventFragment);
+        setFragment(targetFragment);
     }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.navigationEvent:
-                setFragment(eventFragment);
+            case R.id.navigationTarget:
+                setFragment(targetFragment);
                 return true;
             case R.id.navigationHistory:
                 setFragment(historyFragment);

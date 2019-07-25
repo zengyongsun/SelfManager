@@ -2,16 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigationEvent"
-        android:icon="@mipmap/icon_navigation_event"
-        android:title="@string/title_event"/>
+        android:id="@+id/navigationTarget"
+        android:icon="@mipmap/icon_target_selected"
+        android:title="@string/title_event" />
+
     <item
         android:id="@+id/navigationHistory"
-        android:icon="@mipmap/icon_navigation_histroy"
-        android:title="@string/title_history"/>
+        android:icon="@mipmap/icon_history_selected"
+        android:title="@string/title_history" />
     <item
         android:id="@+id/navigationMine"
-        android:icon="@mipmap/icon_navigation_mine"
-        android:title="@string/title_mine"/>
+        android:icon="@mipmap/icon_min_selected"
+        android:title="@string/title_mine" />
 
 </menu>

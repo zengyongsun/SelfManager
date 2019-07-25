@@ -20,8 +20,10 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
-    @BindView(R.id.bottomNavigationView) BottomNavigationView bottomNavigationView;
-    @BindView(R.id.frameLayout) FrameLayout frameLayout;
+    @BindView(R.id.bottomNavigationView)
+    BottomNavigationView bottomNavigationView;
+    @BindView(R.id.frameLayout)
+    FrameLayout frameLayout;
     private EventFragment eventFragment;
     private HistoryFragment historyFragment;
     private MineFragment mineFragment;
@@ -59,7 +61,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             case R.id.navigationMine:
                 setFragment(mineFragment);
                 return true;
-
+            default:
+                break;
         }
         return false;
     }

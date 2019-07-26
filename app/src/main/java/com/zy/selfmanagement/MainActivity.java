@@ -10,7 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
 
-import com.zy.selfmanagement.fragment.TargetFragment;
+import com.zy.selfmanagement.target.TargetFragment;
 import com.zy.selfmanagement.fragment.HistoryFragment;
 import com.zy.selfmanagement.fragment.MineFragment;
 

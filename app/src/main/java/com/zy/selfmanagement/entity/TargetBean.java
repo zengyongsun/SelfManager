@@ -44,7 +44,9 @@ public class TargetBean {
      */
     public int frequency;
 
-    @Backlink(to = "TargetBean")
+    public String saySelf;
+
+    @Backlink(to = "targetBean")
     public ToMany<PunchBean> punchBeans;
 
 }

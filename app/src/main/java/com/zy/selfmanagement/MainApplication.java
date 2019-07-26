@@ -2,6 +2,8 @@ package com.zy.selfmanagement;
 
 import android.app.Application;
 
+import com.orhanobut.logger.AndroidLogAdapter;
+import com.orhanobut.logger.Logger;
 import com.zy.selfmanagement.db.ObjectBox;
 
 /**
@@ -18,5 +20,6 @@ public class MainApplication extends Application {
         super.onCreate();
 
         ObjectBox.init(this);
+        Logger.addLogAdapter(new AndroidLogAdapter());
     }
 }

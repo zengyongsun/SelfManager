@@ -3,6 +3,7 @@
     package="com.zy.selfmanagement">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".MainApplication"
         android:allowBackup="true"
@@ -20,6 +21,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".target.AddTargetActivity"></activity>
     </application>
 
 </manifest>

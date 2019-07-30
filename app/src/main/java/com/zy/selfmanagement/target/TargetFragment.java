@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.orhanobut.logger.Logger;
 import com.zy.selfmanagement.R;
 import com.zy.selfmanagement.db.ObjectBox;
@@ -72,6 +73,15 @@ public class TargetFragment extends Fragment {
 
     private void initData() {
         targetAdapter.setNewData(targetModel.getTargetBeans());
+        targetAdapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
+                TargetBean targetBean = (TargetBean) adapter.getData().get(position);
+                Intent intent = new Intent(getContext(), CompleteTargetActivity.class);
+                intent.putExtra("target_id", targetBean.id);
+                startActivityForResult(intent, REQUEST_CODE);
+            }
+        });
     }
 
 

@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
 
+import com.zy.selfmanagement.base.BaseActivity;
 import com.zy.selfmanagement.target.TargetFragment;
 import com.zy.selfmanagement.fragment.HistoryFragment;
 import com.zy.selfmanagement.fragment.MineFragment;
@@ -17,7 +18,7 @@ import com.zy.selfmanagement.fragment.MineFragment;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends BaseActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
     @BindView(R.id.bottomNavigationView)
     BottomNavigationView bottomNavigationView;

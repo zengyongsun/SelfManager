@@ -23,6 +23,6 @@ public class TargetAdapter extends BaseQuickAdapter<TargetBean, BaseViewHolder> 
         helper.setText(R.id.tvTarget, item.content);
         helper.setText(R.id.tvEncourage, item.saySelf);
         helper.setText(R.id.tvTimes, item.punchBeans.size() + "");
-        helper.setText(R.id.tvTargetTime, item.frequency + "");
+        helper.setText(R.id.tvTargetTime, "/"+item.frequency);
     }
 }

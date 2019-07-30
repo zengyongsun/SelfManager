@@ -22,6 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".target.AddTargetActivity"></activity>
+        <activity android:name=".target.CompleteTargetActivity"></activity>
     </application>
 
 </manifest>

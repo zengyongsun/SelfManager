@@ -30,4 +30,8 @@ public class TargetModel {
         targetBeanBox.put(targetBean);
     }
 
+    public TargetBean getById(long id) {
+        return targetBeanBox.get(id);
+    }
+
 }
